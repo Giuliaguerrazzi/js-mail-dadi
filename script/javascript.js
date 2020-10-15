@@ -26,13 +26,13 @@ document.getElementById('mail').innerHTML = email;
 
 
 // dado
-var player = Math.floor(Math.random() * 7);
-var computer = Math.floor(Math.random() * 7);
+var player = Math.floor(Math.random() * 5) + 1;
+var computer = Math.floor(Math.random() * 5) + 1;
 
-document.getElementById('player').innerHTML = Math.floor(Math.random() * 7);
-document.getElementById('computer').innerHTML = Math.floor(Math.random() * 7);
+document.getElementById('player').innerHTML = player;
+document.getElementById('computer').innerHTML = computer;
 
-if (player < computer) {
+if (player > computer) {
   console.log('Player win');
   document.getElementById('result').innerHTML = 'Player win';
 }
