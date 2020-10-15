@@ -1,5 +1,5 @@
 // email
-var email = prompt('Inserisci la tua email').toLowerCase;
+var email = (prompt('Inserisci la tua email')).toLowerCase();
 
 var emailList = ['faffo89@live.it', 'sbirulina90@live.it', 'yoda@starwars.it', 'harrypotter@hogwarts.it'];
 console.table(emailList);
@@ -16,10 +16,30 @@ for (var i = 0; i < emailList.length; i++) {
 
 if (emailFound == true) {
   console.log('Utente trovato');
-  message = 'Welcome!';
+  document.getElementById('welcome').innerHTML = 'Welcome!';
 } else {
   console.log('Utente non trovato')
-  message = 'Email not found';
+  document.getElementById('welcome').innerHTML = 'Email not found';
 }
 
-document.getElementById('mail').innerHTML = 'email';
+document.getElementById('mail').innerHTML = email;
+
+
+// dado
+var player = Math.floor(Math.random() * 7);
+var computer = Math.floor(Math.random() * 7);
+
+document.getElementById('player').innerHTML = Math.floor(Math.random() * 7);
+document.getElementById('computer').innerHTML = Math.floor(Math.random() * 7);
+
+if (player < computer) {
+  console.log('Player win');
+  document.getElementById('result').innerHTML = 'Player win';
+}
+else if (computer > player) {
+  console.log('Computer win');
+  document.getElementById('result').innerHTML = 'Computer win';
+}
+else {
+  document.getElementById('result').innerHTML = 'Draw';
+}
