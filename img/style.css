@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.email-exercise {
+  width: 600px;
+  height: 400px;
+  margin: auto;
+  background-image: url('../img/letters.png');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.email-exercise p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+p span {
+  padding: 10px 0;
+}
+
+#welcome {
+  color: red;
+}
+
+
+/* dadi */
+.dice {
+  width: 600px;
+  height: 400px;
+  margin: auto;
+  background-image: url('../img/cube.jpg');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000;
+  border-radius: 10px;
+  color: #fff;
+  margin-top: 15px;
+}
+
+.dice h2 {
+  font-weight: 700;
+  font-size: 35px;
+  color: #860c0c;
+  text-shadow: 2px 2px grey;
+}
+
+.dice p,
+.dice span {
+  padding: 5px 0;
+}
+
+.dice #player,
+.dice #computer {
+  color: yellow;
+}
+
+.dice #result {
+  color: red;
+  font-size: 25px;
+
+}

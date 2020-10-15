@@ -16,10 +16,10 @@ for (var i = 0; i < emailList.length; i++) {
 
 if (emailFound == true) {
   console.log('Utente trovato');
-  document.getElementById('welcome').innerHTML = 'Welcome!';
+  document.getElementById('welcome').innerHTML = 'E&rsquo; giusta! Benvenuto!';
 } else {
   console.log('Utente non trovato')
-  document.getElementById('welcome').innerHTML = 'Email not found';
+  document.getElementById('welcome').innerHTML = 'Non è stata trovata, mi dispiace';
 }
 
 document.getElementById('mail').innerHTML = email;
